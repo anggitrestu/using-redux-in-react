@@ -1,8 +1,9 @@
 import { createStore, compose } from 'redux';
-import cakeReducer from './cake/cakeReducer';
+// import cakeReducer from './cake/cakeReducer';
+import rootReducer from './rootReducer';
 
 const store = createStore(
-  cakeReducer,
+  rootReducer,
   compose(
     window.__REDUX_DEVTOOLS_EXTENSION__
       ? window.__REDUX_DEVTOOLS_EXTENSION__()
